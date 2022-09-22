@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.box-container {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+
+.box {
+  border: .1rem solid rgb(34, 88, 34);
+  margin: 1rem;
+  width: fit-content;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  margin: auto;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.show {
+  transition: all .2s ease-in-out;
+  opacity: 1;
+  transform: translate(0px);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
